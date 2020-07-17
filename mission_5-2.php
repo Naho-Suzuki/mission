@@ -192,7 +192,7 @@
                             $comment = $_POST["com"];
                             $date = date("Y/m/d H:i:s");
                             $password = $_POST["pass1"];
-                            $sql = 'UPDATE table_5_1 SET name=:name,comment=:comment,date=:date,password=:password WHERE id=:id';
+                            $sql = 'UPDATE table_5_2 SET name=:name,comment=:comment,date=:date,password=:password WHERE id=:id';
                             $stmt = $pdo->prepare($sql);
                             $stmt->bindParam(':name', $name, PDO::PARAM_STR);
                             $stmt->bindParam(':comment', $comment, PDO::PARAM_STR);
